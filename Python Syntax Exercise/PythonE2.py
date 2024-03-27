@@ -45,16 +45,13 @@ def print_upper_words3(words, must_start_with):
              print(word.upper())
 
 def print_upper_words3(words, must_start_with):
-    """Print each word on sep line, uppercased, if starts with one of given
+    """Print each word on a separate line, uppercased, if it starts with one of the given letters.
 
-        >>> print_upper_words3(["eagle", "Edward", "Alfred", "zope"],
-        ...                   must_start_with=["A", "E"])
-        EDWARD
-        ALFRED
+    >>> print_upper_words3(["eagle", "Edward", "Alfred", "zope"],
+    ...                     must_start_with=["A", "E"])
+    EDWARD
+    ALFRED
     """
-
     for word in words:
-        for letter in must_start_with:
-            if word.startswith(letter):
-                print(word.upper())
-                break
+        if any(word.lower().startswith(letter.lower()) for letter in must_start_with):
+            print(word.upper())
