@@ -5,7 +5,6 @@
   {% for choice in question.choices %}
   <p><input type="radio" name="answer" value="{{ choice }}"> {{ choice }}</p>
   {% endfor %}
-  </select>
   <button>Continue</button>
 </form>
 {% endblock %}
