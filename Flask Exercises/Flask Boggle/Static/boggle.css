@@ -1,0 +1,29 @@
+.board {
+  border: solid 1px black;
+  border-radius: 8px; /* Rounded corners */
+  font-family: 'Arial', sans-serif; /* More modern font */
+  font-weight: bold;
+  font-size: 180%; /* Slightly smaller font size */
+}
+
+.board td {
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.5em; /* Padding inside the cells */
+}
+
+.msg {
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+}
+
+.msg.ok {
+  color: white;
+  background-color: #4CAF50; /* Different shade of green */
+}
+
+.msg.err {
+  color: white;
+  background-color: #FF6347; /* Different shade of red (tomato) */
+}
