@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #333;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    table-layout: fixed; /* Ensure table layout is fixed */
+}
+
+th, td {
+    border: 1px solid #000;
+    width: 150px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    text-align: center;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle; /* Vertically center the text */
+}
+
+th {
+    background-color: blue;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+td {
+    background-color: blue;
+    color: white;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: normal; 
+    word-wrap: break-word; 
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
